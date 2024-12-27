@@ -12,7 +12,7 @@ public class 重复的子字符串 {
         //子串默认是从最开头开始的
         for (int i = 1; i <= s.length() / 2; i++) {
             if (s.length() % i == 0) {
-                String substring = s.substring(0, i);
+                String substring = s.substring(0, i);//选取子串
                 boolean flag = true;
                 for (int j = i; j < s.length(); j += i) {
                     if (!substring.equals(s.substring(j, j + i))) {
@@ -25,6 +25,7 @@ public class 重复的子字符串 {
                }
             }
         }
+        return false;
 
     }
     public static void main(String[] args) {
