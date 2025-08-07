@@ -1,8 +1,8 @@
-> Arrays.sort (nums) 
-> 对于基本数据类型的数组
-> Collections.sort (ls)
-> 对于引用数据类型的数组
----
+> Arrays.sort (nums)  对于基本数据类型的数组进行排序
+
+> Collections.sort (ls) 对于引用数据类型的数组进行排序
+### 简单示例
+```java
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
@@ -33,5 +33,5 @@ public class Main {
         }
     }
 }
----
+```
 
