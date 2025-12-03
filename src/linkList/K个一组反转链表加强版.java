@@ -43,7 +43,7 @@ public class K个一组反转链表加强版 {
                 p.next=pre;
                 p=nxt;
             }
-            //后续不足k个也继续反转
+            //后续不足k个也继续反转 就是对后续节点进行反转链表的操作 然后p指针指向后边反转节点的新头节点即可
             ListNode preN=null;
             while(cur!=null){
                 ListNode next=cur.next;
