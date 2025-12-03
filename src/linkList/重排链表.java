@@ -1,3 +1,5 @@
+package linkList;
+
 import util.ListNode;
 
 public class 重排链表 {
@@ -39,7 +41,6 @@ public class 重排链表 {
     // 添加main函数测试用例
     public static void main(String[] args) {
         重排链表 solution = new 重排链表();
-        
         // 创建测试链表: 1->2->3->4->5
         ListNode head = new ListNode(1);
         head.next = new ListNode(2);
