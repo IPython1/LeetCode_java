@@ -10,7 +10,7 @@ public class bubblesort {
 
         // 外层循环：控制排序轮次 n个数的话就是需要n-1次排序
         for (int i = 0; i < n - 1; i++) {
-            boolean swapped = false;  // 标记本轮是否有交换
+//            boolean swapped = false;  // 标记本轮是否有交换
 
             // 内层循环：进行实际比较和交换
             // n - i - 1: 每轮结束后，最后i个元素已排好序 每次排序都会把最大的数放在后边
@@ -23,14 +23,14 @@ public class bubblesort {
                     arr[j] = arr[j + 1];
                     arr[j + 1] = temp;
 
-                    swapped = true;  // 标记发生交换
+//                    swapped = true;  // 标记发生交换
                 }
             }
 
             // 若本轮无交换，说明数组已完全有序
-            if (!swapped) {
-                break;  // 提前结束排序
-            }
+//            if (!swapped) {
+//                break;  // 提前结束排序
+//            }
         }
     }
 
