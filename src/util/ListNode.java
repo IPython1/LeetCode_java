@@ -10,7 +10,15 @@ package util;
 public class ListNode {
     public int val;
     public ListNode next;
-    ListNode() {}
-    public ListNode(int val) { this.val = val; }
-    ListNode(int val, ListNode next) { this.val = val; this.next = next; }
+    public ListNode(int val) { this.val = val; }//构造函数只接收 val ，next 默认是 null
+
 }
+//class ListNode { //默认defalut 包级访问权限
+//    int val;
+//    ListNode next;
+//
+//    ListNode(int x) {
+//        val = x;
+//        next = null;
+//    }
+//}

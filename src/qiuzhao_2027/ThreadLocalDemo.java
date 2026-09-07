@@ -1,8 +1,15 @@
 package qiuzhao_2027;
 
+/*需求:线程隔离在多线程并发的场景下，每个线程中的变量都是相互独立
+        线程A:设置(变量1)获取(变量1)
+        线程B:设置(变量2)获取(变量2)
+        ThreadLocal
+        1.set(）:将变量绑定到当前线程中
+        2.get(）:获取当前线程绑定的变量
+*/
 public class ThreadLocalDemo {
 
-    // 创建一个 ThreadLocal 变量
+    // 创建一个 ThreadLocal 变量 （将变量绑定到当前线程中）
     // 每个线程访问 THREAD_LOCAL 时，都会拥有自己独立的一份数据
     private static final ThreadLocal<String> THREAD_LOCAL = new ThreadLocal<>();
 
